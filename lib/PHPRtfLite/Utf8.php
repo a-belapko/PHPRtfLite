@@ -89,9 +89,9 @@ class PHPRtfLite_Utf8
                 } else if ($value < 255) {
                     $entities .= '\uc0{\u' . $value . '}';
                 } else if ($value <= 32768) {
-                    $entities .= '\uc1{\u' . $value . '}';
+                    $entities .= '\uc1{\u' . $value . '?}';
                 } else if ($value <= 65535) {
-                    $entities .= '\uc1{\u' . ($value - 65536) . '}';
+                    $entities .= '\uc1{\u' . ($value - 65536) . '?}';
                 } else {
                     $hex = bin2hex(mb_convert_encoding(mb_chr($value), 'UTF-16', 'UTF-8'));
                     $hexs = str_split($hex, 4); // split by 2 bytes
