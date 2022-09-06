@@ -2,4 +2,6 @@ English text: Hello world
 Lithuanian text: Lietuviškos raidės ąčęėįšųūžĄČĘĖĮŠŲŪŽ
 Russian text: русский техт.
 French text: le code à côté de
+Hieroglyphs: 砰 귷
 Symbol: ■
+Emoji: 🤟
